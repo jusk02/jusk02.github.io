@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Form test</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.6 -->
+  <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- daterange picker -->
+  <link rel="stylesheet" href="../../plugins/daterangepicker/daterangepicker.css">
+  <!-- bootstrap datepicker -->
+  <link rel="stylesheet" href="../../plugins/datepicker/datepicker3.css">
+  <!-- iCheck for checkboxes and radio inputs -->
+  <link rel="stylesheet" href="../../plugins/iCheck/all.css">
+  <!-- Bootstrap Color Picker -->
+  <link rel="stylesheet" href="../../plugins/colorpicker/bootstrap-colorpicker.min.css">
+  <!-- Bootstrap time Picker -->
+  <link rel="stylesheet" href="../../plugins/timepicker/bootstrap-timepicker.min.css">
+  <!-- Select2 -->
+  <link rel="stylesheet" href="../../plugins/select2/select2.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../../dist/css/AdminLTE.min.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="../../dist/css/skins/_all-skins.min.css">
+
+</head>
+<body class="hold-transition">
+	<div class="wrapper">
+		 <!-- Content Wrapper. Contains page content -->
+  <div class="">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+        Registro
+        <small>LikeU</small>
+      </h1>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="row">
+        <!-- left column -->
+        <div class="col-md-8 col-md-offset-2">
+          <!-- general form elements -->
+          <div class="box box-primary">
+            <div class="box-header with-border">
+              <h3 class="box-title">Formulario</h3>
+            </div>
+            <!-- /.box-header -->
+            <!-- form start -->
+            <form role="form">
+            	<div class="box-body">
+              	<!-- left column -->
+		        <div class="col-md-6">
+		        	<div class="form-group">
+	                  <label>Nombres</label>
+	                  <input type="text" class="form-control" placeholder="Nombre ...">
+	                </div>
+	                <div class="form-group has-success">
+	                  <label for="exampleInputEmail1"><i class="fa fa-check"></i>Email</label>
+	                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" value="correo@likeu.co">
+	                </div>
+	                <div class="form-group">
+		                <label>Pais</label>
+		                <select class="form-control select2" style="width: 100%;">
+		                  <option selected="selected">Colombia</option>
+		                  <option>Peru</option>
+		                  <option>USA</option>
+		                  <option>Ecuador</option>
+		                  <option>Chile</option>
+		                  <option>Alemania</option>
+		                  <option>India</option>
+		                  <option>.....</option>
+		                </select>
+		            </div>
+		        </div>
+		        <!-- right column -->
+		        <div class="col-md-6">
+		        	<div class="form-group">
+	                  <label>Apellidos</label>
+	                  <input type="text" class="form-control" placeholder="Apellidos ...">
+	                </div>
+	                <div class="form-group has-error">
+	                  <label for="exampleInputPassword1"><i class="fa fa-times-circle-o"></i> Celular</label>
+	                  <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Password" value="233456">
+	                </div>
+	                <div class="form-group">
+		                <label>Ciudad</label>
+		                <select class="form-control select2" style="width: 100%;">
+		                  <option selected="selected">Medellin</option>
+		                  <option>Bogota</option>
+		                  <option>Cali</option>
+		                  <option>Pereira</option>
+		                  <option>.....</option>
+		                </select>
+		            </div>
+		        </div>
+		        <div class="col-md-12">
+	                <div class="form-group">
+		                <label>Como supiste de nosotros?</label>
+		                <select class="form-control select2" style="width: 100%;">
+		                  <option selected="selected">Sitio de empleo</option>
+		                  <option>Amig@</option>
+		                  <option>Google u otro buscador</option>
+		                  <option>Redes sociales</option>
+		                  <option>.....</option>
+		                </select>
+		            </div>
+		        </div>
+		        <div class="checkbox">
+                  <label>
+                    <input type="checkbox"> Acepto los <a href="#" target="_blank">Terminos y condiciones</a>
+                  </label>
+              	</div>
+              </div>
+              
+              <!-- /.box-body -->
+              <div class="box-footer">
+                <button type="button" class="btn btn-primary pull-right">Enviar</button>
+              </div>
+            </form>
+          </div>
+          <!-- /.box -->
+        </div>
+        <!--/.col (left) -->
+        <div class="col-md-6 col-md-offset-3">
+        	 <!-- Input addon -->
+          <div class="box box-info">
+            <div class="box-header with-border">
+              <h3 class="box-title">Verificacion</h3>
+            </div>
+            <div class="box-body">
+              
+
+              <h4>Confirma tu correo</h4>
+
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                <input type="email" class="form-control" placeholder="Email">
+              </div>
+              <br>
+              <h4>Confirma tu celular</h4>
+
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-phone"></i></span>
+                <input type="text" class="form-control" placeholder="Celular">
+              </div>
+              <br>
+            </div>
+            <!-- /.box-body -->
+            <div class="box-footer">
+                <button type="submit" class="btn btn-primary pull-right">Confirmar</button>
+              </div>
+          </div>
+          <!-- /.box -->
+        </div>
+        <div class="col-md-8 col-md-offset-2">
+        	<!-- general form elements -->
+          <div class="box box-primary">
+            <div class="box-header with-border">
+              <h3 class="box-title">Estudios</h3>
+            </div>
+            <!-- /.box-header -->
+            <!-- form start -->
+            <form role="form">
+            	
+            	<div class="box-body">
+            	<a class="btn btn-app">
+	                <i class="fa fa-plus"></i>Agregar
+	            </a>
+              </div>
+              
+              <!-- /.box-body -->
+              <div class="box-footer">
+                <button type="button" class="btn btn-primary pull-right">Siguiente</button>
+              </div>
+            </form>
+          </div>
+          <!-- /.box -->
+        </div>
+        <div class="col-md-6 col-md-offset-3">
+        	<!-- general form elements -->
+          <div class="box box-primary">
+            <div class="box-header with-border">
+              <h3 class="box-title">Nuevo estudio</h3>
+            </div>
+            <!-- /.box-header -->
+            <!-- form start -->
+            <form role="form">
+            	
+            <div class="box-body">
+            	<div class="col-md-6">
+            		<div class="form-group">
+		                <label>Campo</label>
+		                <select class="form-control select2" style="width: 100%;">
+		                  <option selected="selected">Medicina</option>
+		                  <option>Comunicaciones</option>
+		                  <option>Ventas</option>
+		                  <option>Construccion</option>
+		                  <option>.....</option>
+		                </select>
+		            </div>
+		            <div class="form-group">
+		                <label>Tipo</label>
+		                <select class="form-control select2" style="width: 100%;">
+		                  <option selected="selected">Tecnica</option>
+		                  <option>Tecnologia</option>
+		                  <option>Pregrado</option>
+		                  <option>Postgrado</option>
+		                  <option>Especializacion</option>
+		                </select>
+		            </div>
+            		<div class="form-group">
+	                  <label>Nombre</label>
+	                  <input type="text" class="form-control" placeholder="Nombre ...">
+	                </div>
+            	</div>
+            	<div class="col-md-6">
+            		<div class="form-group">
+		                <label>Area</label>
+		                <select class="form-control select2" style="width: 100%;">
+		                  <option selected="selected">Medicina general</option>
+		                  <option>Pediatria</option>
+		                  <option>Sirugia estetica</option>
+		                  <option>Cardiologia</option>
+		                  <option>.....</option>
+		                </select>
+		            </div>
+		            <div class="form-group">
+            			<label>Completa al</label><br>
+		                <label>
+		                  <input type="radio" name="r2" class="flat-red" > 25%
+		                </label>
+		                <label>
+		                  <input type="radio" name="r2" class="flat-red"> 50%
+		                </label>
+		                <label>
+		                  <input type="radio" name="r2" class="flat-red" > 75%
+		                </label>
+		                <label>
+		                  <input type="radio" name="r2" class="flat-red"> 100%
+		                </label>
+		            </div>
+            		<div class="form-group">
+            			<label>Quieres ejercer actividades relacionadas a este estudio?</label><br>
+		                <label>
+		                  <input type="radio" name="r3" class="flat-red" > Si
+		                </label>
+		                <label>
+		                  <input type="radio" name="r3" class="flat-red"> No
+		                </label>
+		            </div>
+            	</div>           	
+            </div>
+              
+              <!-- /.box-body -->
+              <div class="box-footer">
+                <button type="button" class="btn btn-primary pull-right">Agregar</button>
+              </div>
+            </form>
+          </div>
+          <!-- /.box -->
+        </div>
+        <div class="col-md-8 col-md-offset-2">
+        	<!-- general form elements -->
+          <div class="box box-primary">
+            <div class="box-header with-border">
+              <h3 class="box-title">Estudios</h3>
+            </div>
+            <!-- /.box-header -->
+            <!-- form start -->
+            <form role="form">
+            	
+            	<div class="box-body">
+            	<div id="studies list" class="col-md-12 col-sm-12 col-xs-12">
+            		<div class="col-md-6 col-sm-6 col-xs-12">
+		            	<div class="info-box bg-aqua">
+				            <span class="info-box-icon"><i class="fa fa-bookmark-o"></i></span>
+
+				            <div class="info-box-content">
+				              <span class="info-box-text">Medicina General</span>
+				              <span class="info-box-number">Medicina</span>
+
+				              <div class="progress">
+				                <div class="progress-bar" style="width: 75%"></div>
+				              </div>
+				                  <span class="progress-description">
+				                    Pregrado 75%
+				                  </span>
+				            </div>
+				            <!-- /.info-box-content -->
+				        </div>
+				    </div>
+            	</div>
+	            	
+            	<a class="btn btn-app">
+	                <i class="fa fa-plus"></i>Agregar
+	            </a>
+              </div>
+              
+              <!-- /.box-body -->
+              <div class="box-footer">
+                <button type="button" class="btn btn-primary pull-right">Siguiente</button>
+              </div>
+            </form>
+          </div>
+          <!-- /.box -->
+        </div>
+        <div class="col-md-8 col-md-offset-2">
+        	<!-- general form elements -->
+          <div class="box box-primary">
+            <div class="box-header with-border">
+              <h3 class="box-title">Experiencia Laboral</h3>
+            </div>
+            <!-- /.box-header -->
+            <!-- form start -->
+            <form role="form">
+            	
+            	<div class="box-body">
+            	<a class="btn btn-app">
+	                <i class="fa fa-plus"></i>Agregar
+	            </a>
+              </div>
+              
+              <!-- /.box-body -->
+              <div class="box-footer">
+                <button type="button" class="btn btn-primary pull-right">Siguiente</button>
+              </div>
+            </form>
+          </div>
+          <!-- /.box -->
+        </div>
+        <div class="col-md-6 col-md-offset-3">
+        	<!-- general form elements -->
+          <div class="box box-primary">
+            <div class="box-header with-border">
+              <h3 class="box-title">Agregar Experiencia</h3>
+            </div>
+            <!-- /.box-header -->
+            <!-- form start -->
+            <form role="form">
+            	
+            <div class="box-body">
+            	<div class="col-md-6">
+            		<div class="form-group">
+		                <label>Campo</label>
+		                <select class="form-control select2" style="width: 100%;">
+		                  <option selected="selected">Medicina</option>
+		                  <option>Comunicaciones</option>
+		                  <option>Ventas</option>
+		                  <option>Construccion</option>
+		                  <option>.....</option>
+		                </select>
+		            </div>
+		            <div class="form-group">
+            			<label>Duracion</label><br>
+		                <label>
+		                  <input type="radio" name="r2" class="flat-red" > 1-6 meses
+		                </label><br>
+		                <label>
+		                  <input type="radio" name="r2" class="flat-red"> 6 meses-1 año
+		                </label><br>
+		                <label>
+		                  <input type="radio" name="r2" class="flat-red" > 1-2 años
+		                </label><br>
+		                <label>
+		                  <input type="radio" name="r2" class="flat-red"> 2 o mas años
+		                </label><br>
+		            </div>
+            	</div>
+            	<div class="col-md-6">
+            		<div class="form-group">
+		                <label>Area</label>
+		                <select class="form-control select2" style="width: 100%;">
+		                  <option selected="selected">Medicina general</option>
+		                  <option>Pediatria</option>
+		                  <option>Sirugia estetica</option>
+		                  <option>Cardiologia</option>
+		                  <option>.....</option>
+		                </select>
+		            </div>
+            		<div class="form-group">
+            			<label>Quieres ejercer actividades relacionadas a este trabajo?</label><br>
+		                <label>
+		                  <input type="radio" name="r3" class="flat-red" > Si
+		                </label>
+		                <label>
+		                  <input type="radio" name="r3" class="flat-red"> No
+		                </label>
+		            </div>
+            	</div>           	
+            </div>
+              
+              <!-- /.box-body -->
+              <div class="box-footer">
+                <button type="button" class="btn btn-primary pull-right">Agregar</button>
+              </div>
+            </form>
+          </div>
+          <!-- /.box -->
+        </div>
+        <div class="col-md-8 col-md-offset-2">
+        	<!-- general form elements -->
+          <div class="box box-primary">
+            <div class="box-header with-border">
+              <h3 class="box-title">Experincia laboral</h3>
+            </div>
+            <!-- /.box-header -->
+            <!-- form start -->
+            <form role="form">
+            	
+            	<div class="box-body">
+            	<div id="studies list" class="col-md-12 col-sm-12 col-xs-12">
+            		<div class="col-md-6 col-sm-6 col-xs-12">
+		            	<div class="info-box bg-aqua">
+				            <span class="info-box-icon"><i class="fa fa-flag-o"></i></span>
+
+				            <div class="info-box-content">
+				              <span class="info-box-text">Medicina General</span>
+				              <span class="info-box-number">Medicina</span>
+
+				              <div class="progress">
+				                <div class="progress-bar" style="width: 100%"></div>
+				              </div>
+				                  <span class="progress-description">
+				                    1-2 años
+				                  </span>
+				            </div>
+				            <!-- /.info-box-content -->
+				        </div>
+				    </div>
+            	</div>
+	            	
+            	<a class="btn btn-app">
+	                <i class="fa fa-plus"></i>Agregar
+	            </a>
+              </div>
+              
+              <!-- /.box-body -->
+              <div class="box-footer">
+                <button type="button" class="btn btn-primary pull-right">Siguiente</button>
+              </div>
+            </form>
+          </div>
+          <!-- /.box -->
+        </div>
+        <div class="col-md-8 col-md-offset-2">
+          <!-- general form elements -->
+          <div class="box box-primary">
+            <div class="box-header with-border">
+              <h3 class="box-title">Formulario de validacion</h3>
+            </div>
+            <!-- /.box-header -->
+            *****este formato solo se muestra a quienes agreguen experiencia en areas que son cubiertas por nuestros servicios*****
+            <!-- form start -->
+            <form role="form">
+            	<div class="box-body">
+              	<!-- left column -->
+		        <div class="col-md-6">
+		        	<div class="form-group">
+	                  <label>pregunta</label>
+	                  <input type="text" class="form-control" placeholder="Nombre ...">
+	                </div>
+	                <div class="form-group">
+	                  <label>pregunta</label>
+	                  <input type="text" class="form-control" placeholder="Nombre ...">
+	                </div>
+	                <div class="form-group">
+	                  <label>pregunta</label>
+	                  <input type="text" class="form-control" placeholder="Nombre ...">
+	                </div>
+		        </div>
+		        <!-- right column -->
+		        <div class="col-md-6">
+		        	<div class="form-group">
+	                  <label>pregunta</label>
+	                  <input type="text" class="form-control" placeholder="Nombre ...">
+	                </div>
+	                <div class="form-group">
+	                  <label>pregunta</label>
+	                  <input type="text" class="form-control" placeholder="Nombre ...">
+	                </div>
+	                <div class="form-group">
+	                  <label>pregunta</label>
+	                  <input type="text" class="form-control" placeholder="Nombre ...">
+	                </div>
+		        </div>
+              </div>
+              
+              <!-- /.box-body -->
+              <div class="box-footer">
+                <button type="button" class="btn btn-primary pull-right">Siguiente</button>
+              </div>
+            </form>
+          </div>
+          <!-- /.box -->
+        </div>
+                <div class="col-md-8 col-md-offset-2">
+        	<!-- general form elements -->
+          <div class="box box-primary">
+            <div class="box-header with-border">
+              <h3 class="box-title">Idiomas</h3>
+            </div>
+            <!-- /.box-header -->
+            <!-- form start -->
+            <form role="form">
+            	
+            	<div class="box-body">
+            	<a class="btn btn-app">
+	                <i class="fa fa-plus"></i>Agregar
+	            </a>
+              </div>
+              
+              <!-- /.box-body -->
+              <div class="box-footer">
+                <button type="button" class="btn btn-primary pull-right">Siguiente</button>
+              </div>
+            </form>
+          </div>
+          <!-- /.box -->
+        </div>
+        <div class="col-md-6 col-md-offset-3">
+        	<!-- general form elements -->
+          <div class="box box-primary">
+            <div class="box-header with-border">
+              <h3 class="box-title">Nuevo idioma</h3>
+            </div>
+            <!-- /.box-header -->
+            <!-- form start -->
+            <form role="form">
+            	
+            <div class="box-body">
+            	<div class="col-md-6">
+            		<div class="form-group">
+		                <label>Idioma</label>
+		                <select class="form-control select2" style="width: 100%;">
+		                  <option selected="selected">Ingles</option>
+		                  <option>Frances</option>
+		                  <option>Aleman</option>
+		                  <option>Portugues</option>
+		                  <option>.....</option>
+		                </select>
+		            </div>
+		            
+            	</div>
+            	<div class="col-md-6">
+            		
+		            <div class="form-group">
+            			<label>Nivel Hablado</label><br>
+		                <label>
+		                  <input type="radio" name="r2" class="flat-red" > 25%
+		                </label>
+		                <label>
+		                  <input type="radio" name="r2" class="flat-red"> 50%
+		                </label>
+		                <label>
+		                  <input type="radio" name="r2" class="flat-red" > 75%
+		                </label>
+		                <label>
+		                  <input type="radio" name="r2" class="flat-red"> 100%
+		                </label>
+		            </div>
+            		<div class="form-group">
+            			<label>Nivel Escrito</label><br>
+		                <label>
+		                  <input type="radio" name="r2" class="flat-red" > 25%
+		                </label>
+		                <label>
+		                  <input type="radio" name="r2" class="flat-red"> 50%
+		                </label>
+		                <label>
+		                  <input type="radio" name="r2" class="flat-red" > 75%
+		                </label>
+		                <label>
+		                  <input type="radio" name="r2" class="flat-red"> 100%
+		                </label>
+		            </div>
+		            <div class="form-group">
+            			<label>Nivel Leido</label><br>
+		                <label>
+		                  <input type="radio" name="r2" class="flat-red" > 25%
+		                </label>
+		                <label>
+		                  <input type="radio" name="r2" class="flat-red"> 50%
+		                </label>
+		                <label>
+		                  <input type="radio" name="r2" class="flat-red" > 75%
+		                </label>
+		                <label>
+		                  <input type="radio" name="r2" class="flat-red"> 100%
+		                </label>
+		            </div>
+            	</div>           	
+            </div>
+              
+              <!-- /.box-body -->
+              <div class="box-footer">
+                <button type="button" class="btn btn-primary pull-right">Agregar</button>
+              </div>
+            </form>
+          </div>
+          <!-- /.box -->
+        </div>
+        <div class="col-md-8 col-md-offset-2">
+        	<!-- general form elements -->
+          <div class="box box-primary">
+            <div class="box-header with-border">
+              <h3 class="box-title">Idiomas</h3>
+            </div>
+            <!-- /.box-header -->
+            <!-- form start -->
+            <form role="form">
+            	
+            	<div class="box-body">
+            	<div id="studies list" class="col-md-12 col-sm-12 col-xs-12">
+            		<div class="col-md-6 col-sm-6 col-xs-12">
+		            	<div class="info-box bg-aqua">
+				            <span class="info-box-icon"><i class="fa fa-comments-o"></i></span>
+
+				            <div class="info-box-content">
+				              <span class="info-box-text"></span>
+				              <span class="info-box-number">Ingles</span>
+
+				              <div class="progress">
+				                <div class="progress-bar" style="width: 75%"></div>
+				              </div>
+				                  <span class="progress-description">
+				                    Dominado al 75%
+				                  </span>
+				            </div>
+				            <!-- /.info-box-content -->
+				        </div>
+				    </div>
+            	</div>
+	            	
+            	<a class="btn btn-app">
+	                <i class="fa fa-plus"></i>Agregar
+	            </a>
+              </div>
+              
+              <!-- /.box-body -->
+              <div class="box-footer">
+                <button type="button" class="btn btn-primary pull-right">Finalizar</button>
+              </div>
+            </form>
+          </div>
+          <!-- /.box -->
+        </div>
+        
+      </div>
+      <!-- /.row -->
+    </section>
+    <!-- /.content -->
+  </div>
+
+	</div>
+
+	<!-- jQuery 2.2.3 -->
+<script src="../../plugins/jQuery/jquery-2.2.3.min.js"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="../../bootstrap/js/bootstrap.min.js"></script>
+<!-- Select2 -->
+<script src="../../plugins/select2/select2.full.js"></script>
+<!-- InputMask -->
+<script src="../../plugins/input-mask/jquery.inputmask.js"></script>
+<script src="../../plugins/input-mask/jquery.inputmask.date.extensions.js"></script>
+<script src="../../plugins/input-mask/jquery.inputmask.extensions.js"></script>
+<!-- date-range-picker -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
+<script src="../../plugins/daterangepicker/daterangepicker.js"></script>
+<!-- bootstrap datepicker -->
+<script src="../../plugins/datepicker/bootstrap-datepicker.js"></script>
+<!-- bootstrap color picker -->
+<script src="../../plugins/colorpicker/bootstrap-colorpicker.min.js"></script>
+<!-- bootstrap time picker -->
+<script src="../../plugins/timepicker/bootstrap-timepicker.min.js"></script>
+<!-- SlimScroll 1.3.0 -->
+<script src="../../plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<!-- iCheck 1.0.1 -->
+<script src="../../plugins/iCheck/icheck.min.js"></script>
+<!-- FastClick -->
+<script src="../../plugins/fastclick/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/app.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../../dist/js/demo.js"></script>
+<!-- Page script -->
+<script>
+  $(function () {
+    //Initialize Select2 Elements
+    $(".select2").select2();
+
+    //Datemask dd/mm/yyyy
+    $("#datemask").inputmask("dd/mm/yyyy", {"placeholder": "dd/mm/yyyy"});
+    //Datemask2 mm/dd/yyyy
+    $("#datemask2").inputmask("mm/dd/yyyy", {"placeholder": "mm/dd/yyyy"});
+    //Money Euro
+    $("[data-mask]").inputmask();
+
+    //Date range picker
+    $('#reservation').daterangepicker();
+    //Date range picker with time picker
+    $('#reservationtime').daterangepicker({timePicker: true, timePickerIncrement: 30, format: 'MM/DD/YYYY h:mm A'});
+    //Date range as a button
+    $('#daterange-btn').daterangepicker(
+        {
+          ranges: {
+            'Today': [moment(), moment()],
+            'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+            'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+            'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+            'This Month': [moment().startOf('month'), moment().endOf('month')],
+            'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+          },
+          startDate: moment().subtract(29, 'days'),
+          endDate: moment()
+        },
+        function (start, end) {
+          $('#daterange-btn span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+        }
+    );
+
+    //Date picker
+    $('#datepicker').datepicker({
+      autoclose: true
+    });
+
+    //iCheck for checkbox and radio inputs
+    $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
+      checkboxClass: 'icheckbox_minimal-blue',
+      radioClass: 'iradio_minimal-blue'
+    });
+    //Red color scheme for iCheck
+    $('input[type="checkbox"].minimal-red, input[type="radio"].minimal-red').iCheck({
+      checkboxClass: 'icheckbox_minimal-red',
+      radioClass: 'iradio_minimal-red'
+    });
+    //Flat red color scheme for iCheck
+    $('input[type="checkbox"].flat-red, input[type="radio"].flat-red').iCheck({
+      checkboxClass: 'icheckbox_flat-green',
+      radioClass: 'iradio_flat-green'
+    });
+
+    //Colorpicker
+    $(".my-colorpicker1").colorpicker();
+    //color picker with addon
+    $(".my-colorpicker2").colorpicker();
+
+    //Timepicker
+    $(".timepicker").timepicker({
+      showInputs: false
+    });
+  });
+</script>
+</body>
+</html>
